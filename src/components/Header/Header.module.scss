@@ -1,0 +1,46 @@
+@import '../../app/variables.scss';
+
+.header {
+    display: flex;
+    position: fixed;
+    gap: 20px;
+    width: 100vw;
+    height: 80px;
+
+    .logo {
+        padding: 10px;
+        width: 180px;
+        display: flex;
+        gap: 5px;
+
+        h1 {
+            font-size: 1rem;
+            font-weight: normal;
+
+            &::first-letter {
+                font-size: 2.2rem;
+            }
+        }
+    }
+    
+    .main {
+        width: 100%;
+        background: $main-blue;
+        padding: 20px;
+        display: flex;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+        align-items: center;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 2px;
+            height: 80%;
+            background-color: rgba(194, 165, 165, 1);
+              
+        }
+    }
+}

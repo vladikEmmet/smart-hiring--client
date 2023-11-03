@@ -1,0 +1,22 @@
+@import "../../../app/variables.scss";
+
+.options {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    button {
+        height: 50px;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 1rem;
+
+        &:hover {
+            background: $secondary-blue;
+            color: $main-white;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.container  {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .select {
+        height: 30px;
+    }
+
+    .input {
+        height: 35px;
+        margin-top: 7px;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        padding: 5px;
+        font-size: 1.1rem;
+        
+        &::placeholder {
+            font-size: 1.1rem;
+        }
+    }
+
+    .button {
+        border: none;
+        position: absolute;
+        background: transparent;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 1.2rem;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}

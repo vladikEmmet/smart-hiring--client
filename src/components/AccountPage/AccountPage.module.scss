@@ -1,0 +1,153 @@
+@import "../../app/variables.scss";
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .avatar {
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 auto 15px;
+    }
+}
+
+.about {
+    font-weight: bold;
+}
+
+.experience {
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .add-exp-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background: #17a2b8;
+        color: $main-white;
+        font-size: 1rem;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+
+.cancel-btn {
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ce0909;
+    color: $main-white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.experience-list-container {
+    display: flex;
+    gap: 10px;
+
+    .remove-experience-btn {
+        height: 50px;
+        width: 50px;
+        align-self: center;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        color: #17a2b8;
+        font-size: 2rem;
+    }
+}
+
+.add-skill-btn {
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #17a2b8;
+    color: $main-white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-exp-btns-container {
+    display: flex;
+    gap: 10px;
+}
+
+.options {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        border: none;
+        border-radius: 5px;
+        color: $main-white;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 10px 20px;
+
+        &.edit-profile-btn,
+        &.save-changes-btn {
+            background: #bd6712;
+        }
+
+        &.logout-btn,
+        &.cancel-btn {
+            background: #ce0909;
+        }
+    }
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+
+    input {
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+        height: 30px;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        text-decoration: underline;
+        display: inline-block;
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .add-skill-btn {
+        max-width: 8%;
+    }
+}

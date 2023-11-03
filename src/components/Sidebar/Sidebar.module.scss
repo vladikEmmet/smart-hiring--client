@@ -1,0 +1,56 @@
+@import "../../app/variables.scss";
+
+.aside {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    height: calc(100vh - 80px);
+    background: $main-blue;
+    width: 180px;
+    
+    nav {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 25px 8px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 10%;
+            width: 80%;
+            height: 2px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+       .item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            a:hover {
+                text-decoration: underline;
+            }
+
+            svg {
+                font-size: 1.2rem;
+            }
+        }
+
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        a {
+            font-size: 1.05rem;
+        }
+    }
+}
